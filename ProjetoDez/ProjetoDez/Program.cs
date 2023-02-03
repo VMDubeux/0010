@@ -1,14 +1,17 @@
 ﻿using System;
+
 namespace Exercicio
 {
     class ProjetoDez
     {
         static void Main(string[] args)
         {
-            sbyte alcool = 0;
-            sbyte gasolina = 0;
-            sbyte diesel = 0;
+            sbyte alcool = 0, gasolina = 0, diesel = 0;
 
+            Console.WriteLine("Álcool (cód. 1)");
+            Console.WriteLine("Gasolina (cód. 2)");
+            Console.WriteLine("Diesel (cód. 3)");
+            Console.WriteLine();
             Console.WriteLine("Informe o código do produto (1 a 3) ou digite 4 para finalizar:");
             sbyte cod = sbyte.Parse(Console.ReadLine());
 
@@ -38,6 +41,8 @@ namespace Exercicio
             Console.WriteLine($"Álcool: {alcool}");
             Console.WriteLine($"Gasolina:{gasolina}");
             Console.WriteLine($"Diesel:{diesel}");
+
+            Console.ReadKey();
         }
     }
 }
